@@ -1,0 +1,124 @@
+@import './src/common/sass/variables';
+
+form {
+  gap: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0em;
+  bottom: 210px;
+
+  input {
+    color: $textColor;
+    padding: 0 0 2rem;
+    border-style: solid;
+    border-color: $textColor;
+    border-width: 0 0 0.1px;
+    border-radius: 0;
+    width: 100%;
+    background: 0 0;
+    font-size: 1.4rem;
+    letter-spacing: -.005em;
+    line-height: 1.4em;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    &:focus {
+      outline: none !important;
+      border:1px solid $bgColor;
+      box-shadow: 0 0 10px $colorLineYellow;
+    }
+    &::placeholder {
+      color: $textColor;
+    }
+  }
+
+  textarea {
+    color: $textColor;
+    padding: 0;
+    border-style: solid;
+    border-color: $textColor;
+    border-width: 0 0 0.1px;
+    border-radius: 0;
+    height: 5rem;
+    width: 100%;
+    background: 0 0;
+    font-size: 1.7rem;
+    letter-spacing: -.005em;
+    line-height: 1.4em;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    &:focus {
+      outline: none !important;
+      border:1px solid $bgColor;
+      box-shadow: 0 0 10px $colorLineYellow;
+    }
+    &::placeholder {
+      color: $textColor;
+    }
+  }
+
+  .button_area {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      background: 0 0;
+      border: none;
+      color: $textColor;
+      cursor: pointer;
+      flex-wrap: wrap;
+      line-height: 1.4em;
+      font-weight: 300;
+      letter-spacing: -.005em;
+      font-family: inherit;
+      padding: 0;
+      margin: 0;
+      height: 3rem;
+    }
+    span {
+      color: $textColor;
+      font-size: 1.7rem;
+      box-sizing: border-box;
+    }
+    .small_info_text {
+      font-size: 1rem;
+      line-height: 1.48em;
+      letter-spacing: 0;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $textDescriptionColor;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

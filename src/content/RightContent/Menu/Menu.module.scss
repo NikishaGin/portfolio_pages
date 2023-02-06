@@ -1,0 +1,65 @@
+@import './src/common/sass/variables';
+
+.nav_container {
+  position: fixed;
+  right: 1.7rem;
+  top: 3rem;
+  z-index: 60;
+  cursor: pointer;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: moveInRight 4s ease-out;
+
+  .nav_burger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 2rem;
+
+    .line {
+      width: 100%;
+      border: 0.1px solid;
+      border-bottom-width: 0px;
+      transition: .25s ease;
+    }
+    &:hover {
+      color: $colorLineYellow
+    }
+  }
+
+  .small_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+  }
+  &:hover .small_container {
+    opacity: 1;
+    transition: all 450ms ease-in;
+  }
+}
+
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+

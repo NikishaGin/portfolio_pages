@@ -1,0 +1,9 @@
+@import './src/common/sass/variables';
+
+.font {
+  color: $textDescriptionColor;
+  font-size: 1.3rem;
+  &:hover {
+    color: $colorLineYellow
+  }
+}

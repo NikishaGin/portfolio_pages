@@ -1,0 +1,89 @@
+@import './src/common/sass/variables';
+
+.title {
+  padding-top: 1.5rem;
+
+
+  h5 {
+    font-size: 1.4rem;
+    line-height: 1em;
+    color: $textColor;
+    margin-bottom: 1.1rem;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+
+.line {
+  border: 0.1px solid $borderColor;
+  width: 100%;
+  position: relative;
+  bottom: 150px;
+
+
+
+  .fill {
+    border-style: solid;
+    border-color: $colorLineYellow;
+    width: 10%;
+    position: absolute;
+    border-width: 0;
+    border-bottom-width: inherit;
+    top: 0;
+    left: 0;
+    animation: fill 2s linear infinite;
+  }
+}
+
+.number {
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 0.8rem;
+  left: 70%;
+  position: absolute;
+  background: #181818;
+  color: $textColor;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.48em;
+    letter-spacing: 0;
+    color: $textColor;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  &:after {
+    width: 0.7rem;
+    height: 0.9rem;
+    content: "";
+    position: absolute;
+    background: inherit;
+    color: $textColor;
+    bottom: 0;
+    z-index: -2;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+}
+
+@keyframes fill {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(900%, 0%, 0);
+  }
+}
+
+.skills_container {
+  @media screen and (max-width: 932px) {
+
+  }
+}
+
+

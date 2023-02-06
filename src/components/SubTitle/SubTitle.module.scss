@@ -1,0 +1,16 @@
+@import '../../common/sass/variables';
+
+.element_width_container {
+    margin: 2rem 0 6rem;
+    .small {
+        font-size: 1.7rem;
+        line-height: 1.4em;
+        letter-spacing: -.005em;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $textDescriptionColor;
+        font-family: 'Source Sans Pro',sans-serif;
+    }
+}
+
